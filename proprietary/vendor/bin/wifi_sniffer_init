@@ -1,0 +1,13 @@
+#! /system/bin/sh
+
+echo 1 > /dev/wmtWifi
+sleep 1
+for i in {1..3}
+do
+    if ifconfig wlan0 up; then
+        echo "ifconfig wlan0 up command success"
+        break;
+    else
+        echo "ifconfig wlan0 up command failure, retrying"
+    fi
+done

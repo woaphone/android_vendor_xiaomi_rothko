@@ -1,0 +1,20 @@
+on post-fs-data
+    mkdir /data/vendor/disp_pq 0777 system system
+    chmod 0777 /mnt/vendor/display_dbi
+    chown system system /mnt/vendor/display_dbi
+    chmod 0777 /mnt/vendor/display_dbi/dbi_lifecycle.data
+    chown system system /mnt/vendor/display_dbi/dbi_lifecycle.data
+    chmod 0777 /mnt/vendor/display_dbi/dbi_lifecycle.bak
+    chown system system /mnt/vendor/display_dbi/dbi_lifecycle.bak
+    chmod 0777 /mnt/vendor/display_dbi/panel_msg.txt
+    chown system system /mnt/vendor/display_dbi/panel_msg.txt
+    restorecon_recursive /mnt/vendor/display_dbi/
+    chmod 0777 /sys/class/mi_display/disp-DSI-0/sn_info
+    chown system system /sys/class/mi_display/disp-DSI-0/sn_info
+
+service vender.mediatek.hardware.pq_aidl-default /vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
+    interface aidl vendor.mediatek.hardware.pq_aidl-service
+    class main
+    user system
+    group system graphics
+    capabilities SYS_NICE

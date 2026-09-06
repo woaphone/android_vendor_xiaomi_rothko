@@ -1,0 +1,7 @@
+#monitor_ee_crash service
+service monitor_ee_crash /vendor/bin/monitor_ee_crash
+  class late_start
+  user root
+  group root log debuggerd
+  seclabel u:r:monitor_ee_crash:s0
+
