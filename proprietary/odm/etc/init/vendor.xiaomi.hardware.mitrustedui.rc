@@ -1,0 +1,4 @@
+service vendor.mitrustedui /odm/bin/hw/vendor.xiaomi.hardware.mitrustedui-service
+	class hal
+	user system
+	group system nfc secure_element

@@ -1,0 +1,11 @@
+<manifest version="1.0" type="device">
+    <!-- Novatek Visdisplay HAL Service -->
+    <hal format="aidl">
+        <name>vendor.novatek.hardware.visdisplaysrv</name>
+        <version>1</version>
+        <interface>
+            <name>IVisdisplaysrv</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

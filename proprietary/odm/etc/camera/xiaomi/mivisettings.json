@@ -1,0 +1,7 @@
+{
+    "offlinedebugmask" : 0,
+    "Soc" : "MTK",
+    "SupportMDBokeh" : true,
+    "Mivi3LogLevel" : 5,
+    "Mivi3LogGroupsEnable" : 0
+}

@@ -1,0 +1,89 @@
+{
+	"##":"后置人像-莱卡生动模式: E2E祛斑祛痘(拍后) + 祛纹 + 匀肤 + 肤色统一",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"Index":1,
+			"Mode":"Preview",
+			"E2ESpotless":
+			{
+				"Enable":false
+			}
+		},
+		{
+			"Index":2,
+			"Mode":"Capture",
+			"E2ESpotless":
+			{
+				"NonLinearUIData": [ 0, 0.4, 1.0],
+				"NonLinearValueData":[0, 0.7, 1.0],
+				"Enable":true,
+				"KeepNevus":true,
+				"ParamFlag":0,
+				"MaleDegreeFactor":0.5
+			}
+		},
+		{
+			"Index":3,
+			"Mode":"Capture",
+			"E2EWrinkle":
+			{
+				"NonLinearUIData": [ 0, 0.4, 1.0],
+				"NonLinearValueData":[0, 0.8, 1.0],
+				"Enable":true,
+				"EnableUniqueDegree":false,
+				"DegreeList":{
+					"ForeheadLine":0.8,
+					"EyeLine":0.8,
+					"LegalLine":0.5,
+					"DarkCircle":1.0,
+					"Unique":1.0
+				},
+				"DegreeFactorList":{
+					"ForeheadLine":1.0,
+					"EyeLine":1.0,
+					"LegalLine":1.0,
+					"DarkCircle":1.0,
+					"Unique":1.0
+				},
+				"MaleFactorList": {
+					"ForeheadLine": 0.6,
+					"EyeLine": 0.6,
+					"LegalLine": 0.0,
+					"DarkCircle": 0.7,
+					"Unique": 1.0
+				}
+			}
+		},
+		{
+			"Index":5,
+			"Mode":"Capture",
+			"SkinUnify":
+			{
+				"NonLinearUIData": [ 0, 1.0],
+				"NonLinearValueData":[0, 1.0],
+				"Enable":true,
+				"ParamFlag":1,
+				"DefaultDegree":0.4,
+				"MaleDegreeFactor":0.5
+			}
+		},
+		{
+			"Index":6,
+			"Mode":"Capture",
+			"Eyebrow":
+			{
+				"Enable":false
+			}
+		},
+		{
+			"Index":8,
+			"Mode":"Capture",
+			"Dimple":
+			{
+				"Enable":true
+			}
+		}
+	]
+}

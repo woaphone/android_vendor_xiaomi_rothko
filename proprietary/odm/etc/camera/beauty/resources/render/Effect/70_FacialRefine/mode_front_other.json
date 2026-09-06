@@ -1,0 +1,23 @@
+{
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"GlobalFactorFlag":[200, 222],
+		"GlobalMaleFactor":[0.5, 1.0],
+		"GlobalFeMaleFactor":[1.0, 1.0],
+		"UVMapping": true
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/2_ModeFrontOther/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/2_ModeFrontOther/effect_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		}
+	]
+}

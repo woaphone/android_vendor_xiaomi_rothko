@@ -1,0 +1,18 @@
+{
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"GlobalFactorFlag":[200, 222],
+		"GlobalMaleFactor":[0.5, 1.0],
+		"GlobalFeMaleFactor":[1.0, 1.0],
+		"UVMapping": false
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/3_ModeVideo/effect.json",
+			"Index":0,
+			"Mode":"Preview"
+		}
+	]
+}

@@ -1,0 +1,253 @@
+{
+    "ellc": {
+        "phone_version": "M1",
+        "model_version": "hdrv8.0",
+        "hdr": "true",
+        "resize": "false",
+        "shape_patch": [
+            784,
+            1040
+        ],
+        "overlap": [
+            32,
+            32
+        ],
+        "snpe": {
+            "runtime": "dsp",
+            "dlcs": [
+                {
+                    "dlc_name": "IMX906_AINR_DX3.dla",
+                    "input": {
+                        "name": "input:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 0.000030518509447574615,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 0.000030518509447574615,
+                        "encoding": "tf16"
+                    },
+                    "dlc_offset": 0,
+                    "dlc_size": 7915479
+                },
+                {
+                    "dlc_name": "IMX906_SNSC_DX3.dla",
+                    "input": {
+                        "name": "input:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 0.000030518509447574615,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 0.000030518509447574615,
+                        "encoding": "tf16"
+                    },
+                    "dlc_offset": 7915479,
+                    "dlc_size": 7915479
+                },
+                {
+                    "dlc_name": "OV13B_AINR_DX3.dla",
+                    "input": {
+                        "name": "input:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 0.000030518509447574615,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 0.000030518509447574615,
+                        "encoding": "tf16"
+                    },
+                    "dlc_offset": 15830958,
+                    "dlc_size": 7915477
+                },
+                {
+                    "dlc_name": "S5KJN1_SNSC_DX3.dla",
+                    "input": {
+                        "name": "input:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 0.000030518509447574615,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 0.000030518509447574615,
+                        "encoding": "tf16"
+                    },
+                    "dlc_offset": 23746435,
+                    "dlc_size": 7915479
+                }
+            ]
+        },
+        "relight_setting": {
+            "range1_luxindex_start": 495.0,
+            "range1_luxindex_end": 520.0,
+            "range1_luxindex_start_ratio": 1.0,
+            "range1_luxindex_end_ratio": 1.0,
+            "range2_luxindex_start": 520.0,
+            "range2_luxindex_end": 540.0,
+            "range2_luxindex_start_ratio": 1.0,
+            "range2_luxindex_end_ratio": 1.0,
+            "range3_luxindex_start": 540.0,
+            "range3_luxindex_end": 550.0,
+            "range3_luxindex_start_ratio": 1.0,
+            "range3_luxindex_end_ratio": 1.0,
+            "range4_luxindex_start": 550.0,
+            "range4_luxindex_end": 580.0,
+            "range4_luxindex_start_ratio": 1.0,
+            "range4_luxindex_end_ratio": 1.0
+        },
+        "Threshold": {
+            "T_brightness": 150,
+            "T_dark_scene": 19000,
+            "T_motion_1": 15,
+            "T_motion_2": 50000000,
+            "T_over_expose_threshold": 3500,
+            "T_over_expose_ratio": 0.002,
+            "T_over_expose_ratio_max": 0.0,
+            "T_first_frame_luxindex": 100,
+            "T_merge_ratio": 0.94,
+            "T_pow_crop_ratio": 0.5,
+            "T_pow_merge_ratio": 2,
+            "T_critical_banding_lux": 450,
+            "T_hdr_lux_threshold": 290
+        },
+        "merge_scale": {
+            "lsc_merge_enable": "true",
+            "camera_Wide": {
+                "range1_gain": 0.0,
+                "range1_scale": 0.125,
+                "range2_gain": 20.0,
+                "range2_scale": 0.108,
+                "range3_gain": 50.0,
+                "range3_scale": 0.084,
+                "range4_gain": 100.0,
+                "range4_scale": 0.05,
+                "range5_gain": 180.0,
+                "range5_scale": 0.045,
+                "range6_gain": 256.0,
+                "range6_scale": 0.036,
+                "range7_gain": 330.0,
+                "range7_scale": 0.028
+            },
+            "camera_Wide_SNSC": {
+                "range1_gain": 0.0,
+                "range1_scale": 0.09,
+                "range2_gain": 20.0,
+                "range2_scale": 0.075,
+                "range3_gain": 50.0,
+                "range3_scale": 0.054,
+                "range4_gain": 100.0,
+                "range4_scale": 0.03,
+                "range5_gain": 180.0,
+                "range5_scale": 0.02,
+                "range6_gain": 256.0,
+                "range6_scale": 0.015,
+                "range7_gain": 330.0,
+                "range7_scale": 0.01
+            },
+            "camera_Tele3X": {
+                "range1_gain": 0.0,
+                "range1_scale": 0.15,
+                "range2_gain": 20.0,
+                "range2_scale": 0.125,
+                "range3_gain": 50.0,
+                "range3_scale": 0.1,
+                "range4_gain": 100.0,
+                "range4_scale": 0.064,
+                "range5_gain": 180.0,
+                "range5_scale": 0.048,
+                "range6_gain": 256.0,
+                "range6_scale": 0.042,
+                "range7_gain": 330.0,
+                "range7_scale": 0.028
+            },
+            "camera_Tele5X": {
+                "range1_gain": 0.0,
+                "range1_scale": 0.15,
+                "range2_gain": 20.0,
+                "range2_scale": 0.125,
+                "range3_gain": 50.0,
+                "range3_scale": 0.1,
+                "range4_gain": 100.0,
+                "range4_scale": 0.064,
+                "range5_gain": 180.0,
+                "range5_scale": 0.048,
+                "range6_gain": 256.0,
+                "range6_scale": 0.042,
+                "range7_gain": 330.0,
+                "range7_scale": 0.028
+            },
+            "camera_UW": {
+                "range1_gain": 0.0,
+                "range1_scale": 0.2,
+                "range2_gain": 20.0,
+                "range2_scale": 0.017,
+                "range3_gain": 50.0,
+                "range3_scale": 0.014,
+                "range4_gain": 100.0,
+                "range4_scale": 0.012,
+                "range5_gain": 180.0,
+                "range5_scale": 0.01,
+                "range6_gain": 256.0,
+                "range6_scale": 0.008,
+                "range7_gain": 330.0,
+                "range7_scale": 0.006
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "/": "Bokeh PreLaunch",
+  "StructPreLaunch": {
+    "isModelLaunch": 0,
+    "modelName_35": "refine_head_seg_768",
+    "useTrimap_35": 1,
+    "modelName_50": "refine_head_seg_768",
+    "useTrimap_50": 1,
+    "modelName_75": "refine_head_seg_768",
+    "useTrimap_75": 1,
+    "modelName_90": "refine_head_seg_768",
+    "useTrimap_90": 1,
+    "downsamplingRatio": 1
+  }
+}

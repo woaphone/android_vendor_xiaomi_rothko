@@ -1,0 +1,23 @@
+{
+	"##": "前置其他",
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"5_DLRetouch/mode_front_other.json",
+			"Index":5
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_front_other.json",
+			"Index":20
+		},
+		{
+			"ConfigurePath":"30_BasicRetouch/mode_base.json",
+			"Index":30
+		},
+		{
+			"ConfigurePath":"70_FacialRefine/mode_front_other.json",
+			"Index":70
+		}
+	]
+}

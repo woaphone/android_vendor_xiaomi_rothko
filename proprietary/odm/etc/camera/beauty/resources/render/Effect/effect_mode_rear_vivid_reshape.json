@@ -1,0 +1,14 @@
+{
+	"##":"后置人像-莱卡-生动模式-美型部分",
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ParameterPath":"Parameter/mode_rear_vivid_reshape.json"
+		},
+        {
+			"ConfigurePath":"70_FacialRefine/mode_rear_portrait.json",
+			"Index":70
+		}
+	]
+}
